@@ -5,22 +5,22 @@ st.title("Wan Chengtao Personal Webpage")
 # Sidebar navigation
 sections = [
     "Personal Information",
-    "EDUCATION",
-    "PROFESSIONAL EXPERIENCE",
-    "CO-CURRICULAR ACTIVITIES AND ACHIEVEMENTS",
-    "SKILLS AND INTERESTS"
+    "Education",
+    "Professional Experience",
+    "Co-curricular Activities and Achievements",
+    "Skills and Interests"
 ]
 section = st.sidebar.radio("Navigation", sections)
 
 if section == "Personal Information":
     st.header("Personal Information")
     st.write("""
-M: (86) 18717688231 | E: willywan@126.com  
+E: willywan@126.com  
 Address: Luohu District, Shenzhen
 """)
 
-elif section == "EDUCATION":
-    st.header("EDUCATION")
+elif section == "Education":
+    st.header("Education")
     st.write("""
 **The Chinese University of Hong Kong**  
 MSc in Marketing  
@@ -39,8 +39,8 @@ German Studies (Public Exchange Programme)
 Erlangen, Germany  2022.9-2023.2
 """)
 
-elif section == "PROFESSIONAL EXPERIENCE":
-    st.header("PROFESSIONAL EXPERIENCE")
+elif section == "Professional Experience":
+    st.header("Professional Experience")
     st.write("""
 **PepsiCo China**  
 Trade Marketing Intern  
@@ -72,8 +72,8 @@ Shanghai, China  2022.7-2022.8
 - Reduced contract approval time by 50% by redesigning workflow procedures.
 """)
 
-elif section == "CO-CURRICULAR ACTIVITIES AND ACHIEVEMENTS":
-    st.header("CO-CURRICULAR ACTIVITIES AND ACHIEVEMENTS")
+elif section == "Co-curricular Activities and Achievements":
+    st.header("Co-curricular Activities and Achievements")
     st.write("""
 **Individual Project**  
 Shanghai, China  2023.6-2023.11
@@ -90,8 +90,8 @@ Shanghai, China  2021.9-2024.6
 - Organized activities. Wrote the annual workbook. Recommended outstanding members of the Youth League Branch.
 """)
 
-elif section == "SKILLS AND INTERESTS":
-    st.header("SKILLS AND INTERESTS")
+elif section == "Skills and Interests":
+    st.header("Skills and Interests")
     st.write("""
 - Languages: English (CET-6: 612, IELTS 7); German (C1-C2, TEM-8)
 - Computer Skills: Python, R, SQL, Excel, PowerPoint
