@@ -2,16 +2,26 @@ import streamlit as st
 
 st.title("Wan Chengtao Personal Webpage")
 
-# Personal Information
-st.header("Personal Information")
-st.write("""
-Name: Wan Chengtao
+# Sidebar navigation
+sections = [
+    "Personal Information",
+    "EDUCATION",
+    "PROFESSIONAL EXPERIENCE",
+    "CO-CURRICULAR ACTIVITIES AND ACHIEVEMENTS",
+    "SKILLS AND INTERESTS"
+]
+section = st.sidebar.radio("Navigation", sections)
+
+if section == "Personal Information":
+    st.header("Personal Information")
+    st.write("""
+M: (86) 18717688231 | E: willywan@126.com  
 Address: Luohu District, Shenzhen
 """)
 
-# Education
-st.header("EDUCATION")
-st.write("""
+elif section == "EDUCATION":
+    st.header("EDUCATION")
+    st.write("""
 **The Chinese University of Hong Kong**  
 MSc in Marketing  
 Hong Kong SAR, China  2024.8-2025.6  
@@ -20,13 +30,18 @@ Hong Kong SAR, China  2024.8-2025.6
 **Tongji University**  
 Bachelor of German  
 Shanghai, China  2020.9-2024.6  
+- GPA: 89/100
 - Thesis: Electrification of German Automotive Giants: A Case Study of Audi
 - Achievements: Second Prize of Tongji University Outstanding Student Scholarship in the academic year 2020-2021
+
+**Friedrich-Alexander University Erlangen-Nuremberg**  
+German Studies (Public Exchange Programme)  
+Erlangen, Germany  2022.9-2023.2
 """)
 
-# Professional Experience
-st.header("PROFESSIONAL EXPERIENCE")
-st.write("""
+elif section == "PROFESSIONAL EXPERIENCE":
+    st.header("PROFESSIONAL EXPERIENCE")
+    st.write("""
 **PepsiCo China**  
 Trade Marketing Intern  
 Shanghai, China  2023.12-2024.4
@@ -57,9 +72,9 @@ Shanghai, China  2022.7-2022.8
 - Reduced contract approval time by 50% by redesigning workflow procedures.
 """)
 
-# Co-curricular Activities and Achievements
-st.header("CO-CURRICULAR ACTIVITIES AND ACHIEVEMENTS")
-st.write("""
+elif section == "CO-CURRICULAR ACTIVITIES AND ACHIEVEMENTS":
+    st.header("CO-CURRICULAR ACTIVITIES AND ACHIEVEMENTS")
+    st.write("""
 **Individual Project**  
 Shanghai, China  2023.6-2023.11
 - Conducted Python-based sentiment analysis on customer complaints and regression analysis on product variables, delivering actionable recommendations for brand improvement.
@@ -75,9 +90,9 @@ Shanghai, China  2021.9-2024.6
 - Organized activities. Wrote the annual workbook. Recommended outstanding members of the Youth League Branch.
 """)
 
-# Skills and Interests
-st.header("SKILLS AND INTERESTS")
-st.write("""
+elif section == "SKILLS AND INTERESTS":
+    st.header("SKILLS AND INTERESTS")
+    st.write("""
 - Languages: English (CET-6: 612, IELTS 7); German (C1-C2, TEM-8)
 - Computer Skills: Python, R, SQL, Excel, PowerPoint
 """) 
